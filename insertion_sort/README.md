@@ -45,4 +45,6 @@ const sortedArr = insertionSort(arr);
 console.log('Sorted array:', sortedArr);
 ```
 
-## 🌐 Real-world use cases
+## 🌐 Use cases
+
+The _insertion sort_ algorithm becomes one of the **better** choices when the array is **nearly sorted**. And it's **not a good choice** when the array is **reversely sorted**.

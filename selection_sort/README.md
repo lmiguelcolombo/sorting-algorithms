@@ -29,7 +29,31 @@ In this GIF:
 ## 💻 Code example (JavaScript)
 
 ```js
+function selectionSort(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    let min = i;
+    for (let el = i + 1; el < arr.length; el++) {
+      if (arr[el] < arr[min]) {
+        min = el;
+      }
+    }
+    if (min !== i) {
+      swap(arr, i, min);
+    }
+  }
+  return arr;
+}
 
+function swap(arr, x, y) {
+  const temporary = arr[x]; // store in memory
+  arr[x] = arr[y];
+  arr[y] = temporary;
+}
+
+const arr = [12, 11, 13, 5, 6];
+console.log('Unsorted array:', arr);
+const sortedArr = selectionSort(arr);
+console.log('Sorted array:', sortedArr);
 ```
 
 ## 🌐 Use cases

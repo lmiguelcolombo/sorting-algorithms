@@ -57,3 +57,9 @@ console.log('Sorted array:', sortedArr);
 ```
 
 ## 🌐 Use cases
+
+The best case is
+
+- when the amount of data isn't too large. So if you have **small datasets**, this algorithm will be a good fit;
+- when your memory is limited, for example on a **memory-constrained environments**;
+- when the data is **nearly sorted**
